@@ -1,7 +1,6 @@
 3D NMF visualization
 ===
-- geometric visualization of Nonnegative Matrix Factorization (NMF)
-- visualizes NMF updating process interactively
+geometric visualization of Nonnegative Matrix Factorization (NMF)
 
 ## Requirements
 - pyqtgraph (`pip install git+https://github.com/pyqtgraph/pyqtgraph`)
