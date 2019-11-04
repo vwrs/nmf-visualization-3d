@@ -93,7 +93,7 @@ class NMF4DVisualizer:
 
     def connect_vertices(self, vertices, width=1, color=(1, 1, 1, 1),
                          convex_hull=True):
-        '''connect all vertices or simplices (convex hull)
+        '''Connects all vertices or simplices (convex hull)
 
         Args:
             vertices (4xN np.ndarray): vertices to connect
