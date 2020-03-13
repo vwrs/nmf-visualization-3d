@@ -43,16 +43,17 @@ def main():
     X, D_gt, C_gt = sampler(N, M, K, noise_coeff=noise_coeff)
     v.connect_vertices(D_gt, width=5, color=(1, 0.2, 1, 1))
 
-    # add gaussian noise to X
+    # draw X as points
+    # each point corresponds to each column vector of X
     v.draw_X(X)
 
-    # initialize
+    # initialize factor matrices
     Dinit, Cinit = initializer(X)
 
-    # plot D0
+    # draw D0
     v.connect_vertices(Dinit, color=(.8, .8, .8, 1))
 
-    # visualize estimations of each model
+    # draw updating process of each model
     # =========================
     def make_prediction_data(update_D, update_C, iter=50):
         Ds = []
